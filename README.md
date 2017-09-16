@@ -1,8 +1,7 @@
 # Quickstart
 
 ```
-git clone https://github.com/mheap/kitchen-ansible-docker-example
+git clone https://github.com/lzpreslav/kitchen-ansible-docker-example
 cd kitchen-ansible-docker-example
-bundle install --path vendor/bundle
-bundle exec kitchen test
+docker-compose up --build
 ```

@@ -7,11 +7,15 @@ provisioner:
   name: ansible_playbook
   playbook: default.yml
   hosts: all
+  require_chef_for_busser: false
 
 platforms:
   - name: ubuntu
     driver_config:
       image: ubuntu:15.04
+  - name: centos
+    driver_config:
+      image: centos:7
 
 suites:
   - name: default
